@@ -1,0 +1,24 @@
+site_name: Amy Talking About Stuff
+site_url: https://amyy.me/docs
+theme:
+  name: terminal
+  palette: pink
+  features:
+    - navigation.side.indexes
+plugins:
+  - search
+  - git-revision-date
+markdown_extensions:
+  - toc:
+      baselevel: "7"
+      toc_depth: "7"
+nav:
+  - Blogs:
+    - SRC Analyzer Rewrite: 'blogs/analyzer.md'
+  - Development:
+    - Nintendo 64: 'development/n64.md'
+    - OoTR: 'development/ootr.md'
+  - OS Configuration:
+    - Resize Linux Partition: 'osconfig/resizelinux.md'
+  - Software:
+    - LiveSplit on macOS/Linux: 'software/livesplit.md'
