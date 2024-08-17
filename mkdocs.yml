@@ -5,6 +5,7 @@ theme:
   palette: pink
   features:
     - navigation.side.indexes
+    - revision.date
 plugins:
   - search
   - git-revision-date
