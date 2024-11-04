@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "formats":
+    {
+        "Markdown": {
+            "glob": "*.md",
+            "command": "mdformat",
+            "args": ["--wrap", "80", "<file>"]
+        }
+    },
+    "ignore": ["*mkdocs.yml", "*requirements.txt", "*img/*"]
+}
