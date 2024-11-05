@@ -1,5 +1,7 @@
 # Universal Formatter
 
+**This was originally written November 4, 2024.**
+
 I am someone who likes coming up with excuses to learn things. Recently, I took
 over the infrastructure for a project at school, and used it as an avenue to
 learn open source server software, such as Proxmox, which is a VM management
@@ -38,9 +40,9 @@ would often go back to even while writing the project. There were also some
 example projects I would run through to get used to the syntax and stuff like
 that. One thing I found with learning a programming language is that, often
 times, once you know one language you can kinda grasp them all. The logic of
-programming if often very similar, regardless of what you're developing, and Go
-was no exception to this. I figured out fairly quickly how things were meant to
-work, and started!
+programming languages are often very similar, regardless of what you're
+developing, and Go was no exception to this. I figured out fairly quickly how
+things were meant to work, and started!
 
 The first "Init" commit was the product of waking up one morning, having
 breakfast, putting on loungewear my partner got me, and sitting there writing
