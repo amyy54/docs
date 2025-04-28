@@ -20,7 +20,7 @@ runs verified, then sort them by the user. This script was so simple that it was
 not even dynamic. That is, any time a game wanted to be queried, one would have
 to fetch all the IDs for users manually so that the run request could be made.
 
-![analyzer_output_text](../img/blogs/analyzer_output_text.png)
+![analyzer_output_text](../static/img/blogs/analyzer_output_text.png)
 
 This manual nature, while useful information to have, was difficult to keep up.
 Any time someone wanted specific data, they would have to come to me and I would
@@ -30,7 +30,7 @@ no contact with, I decided the best thing to do is throw it onto a web server.
 So, I looked into how to make basic HTML (as well as how to use Flask (Django
 looked too complicated)), and I was off.
 
-![analyzer_output_html](../img/blogs/analyzer_output_html.png)
+![analyzer_output_html](../static/img/blogs/analyzer_output_html.png)
 
 This version was… not good. It used a lot of terrible libraries that could not
 work together at all, and it required a lot of hacking together on even the

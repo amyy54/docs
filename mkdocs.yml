@@ -1,4 +1,4 @@
-site_name: Amy Talking About Stuff
+site_name: Amy's Documentation
 site_url: https://amyy.me/docs
 theme:
   name: terminal
@@ -17,6 +17,8 @@ nav:
   - Blogs:
     - Universal Formatter: 'blogs/uformat.md'
     - SRC Analyzer Rewrite: 'blogs/analyzer.md'
+  - CTFs:
+    - NCL Spring 2025 Team Game: 'ctfs/ncl-spring-2025-team.md'
   - Development:
     - Nintendo 64: 'development/n64.md'
     - OoTR: 'development/ootr.md'
