@@ -19,6 +19,7 @@ nav:
     - SRC Analyzer Rewrite: 'blogs/analyzer.md'
   - CTFs:
     - NCL Spring 2025 Team Game: 'ctfs/ncl-spring-2025-team.md'
+    - THM Industrial Intrusion: 'ctfs/thm-industrial-intrusion.md'
   - Development:
     - Nintendo 64: 'development/n64.md'
     - OoTR: 'development/ootr.md'
