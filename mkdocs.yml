@@ -21,8 +21,7 @@ nav:
     - NCL Spring 2025 Team Game: 'ctfs/ncl-spring-2025-team.md'
     - THM Industrial Intrusion: 'ctfs/thm-industrial-intrusion.md'
   - Development:
-    - Nintendo 64: 'development/n64.md'
-    - OoTR: 'development/ootr.md'
+    - N64/Wii Toolchains: 'development/n64-wii.md'
   - OS Configuration:
     - Resize Linux Partition: 'osconfig/resizelinux.md'
   - Software:
