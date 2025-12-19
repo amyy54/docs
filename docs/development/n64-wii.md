@@ -1,4 +1,4 @@
-# Ninteno 64/Wii Development Toolchains
+# Nintendo 64/Wii Development Toolchains
 
 This guide follows the rough installation steps of both the Nintendo 64
 toolchain and the Wii toolchain on macOS. The initial purpose of obtaining these
