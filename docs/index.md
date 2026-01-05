@@ -1,19 +1,18 @@
-# About
+# Home
 
-This is a website designed for one purpose: throwing random write ups onto a
-website so that they can be accessed publicly. Most of it is simple "how I did
-it" documentation that I keep around for myself and potentially others to use.
-If it helps even one person, I believe it has succeeded.
+Hello! This is my documentation website! The purpose of this website is to
+catalog various writeups I've done over the years for how to accomplish various
+weird computing tasks. Most of this work is very simple, and may be inaccurate
+or incomplete. Either way, this is meant to be a casual documentation store for
+public notes that gets updated slowly over time.
 
-## What I do
+## Who am I
 
-I mostly work in the Cybersecurity field. TODO: Actually talk about CTF
-challenges like everyone else.
-
-Generally though, I do a lot of software development in my free time, so a lot
-of the pages currently on this site relate to that. I mostly make simple tools
-for myself and others to use, though that is "showcased" better on my
-[home page](https://amyy.me).
+My professional career is primarily focused on Cybersecurity, though I do a lot
+of software development in my free time. Most of my public work in the software
+developemnt area will be documented on my [homepage](https://amyy.me). This
+website will instead contain casual writeups focused on how I fixed technical
+problems, or just my thoughts put onto a page.
 
 ## One last note
 

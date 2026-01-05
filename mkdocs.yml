@@ -1,28 +1,12 @@
-site_name: Amy's Documentation
+site_name: Amy's Docs
 site_url: https://amyy.me/docs
 theme:
-  name: terminal
-  palette: pink
-  features:
-    - navigation.side.indexes
-    - revision.date
-plugins:
-  - search
-  - git-revision-date
-markdown_extensions:
-  - toc:
-      baselevel: "7"
-      toc_depth: "7"
+  name: amyy-theme
+  fit_to_height: true
+
 nav:
-  - Blogs:
-    - Universal Formatter: 'blogs/uformat.md'
-    - SRC Analyzer Rewrite: 'blogs/analyzer.md'
-  - CTFs:
-    - NCL Spring 2025 Team Game: 'ctfs/ncl-spring-2025-team.md'
-    - THM Industrial Intrusion: 'ctfs/thm-industrial-intrusion.md'
-  - Development:
-    - N64/Wii Toolchains: 'development/n64-wii.md'
-  - OS Configuration:
-    - Resize Linux Partition: 'osconfig/resizelinux.md'
-  - Software:
-    - LiveSplit on macOS/Linux: 'software/livesplit.md'
+  - Blogs: 'blogs/index.md'
+  - CTFs: 'ctfs/index.md'
+  - Development: 'development/index.md'
+  - OS Configuration: 'osconfig/index.md'
+  - Software: 'software/index.md'
