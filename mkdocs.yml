@@ -8,5 +8,4 @@ nav:
   - Blogs: 'blogs/index.md'
   - CTFs: 'ctfs/index.md'
   - Development: 'development/index.md'
-  - OS Configuration: 'osconfig/index.md'
-  - Software: 'software/index.md'
+  - Archive: 'archive/index.md'
