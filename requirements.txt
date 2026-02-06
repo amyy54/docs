@@ -1,2 +1,2 @@
 mkdocs~=1.6.0
-mkdocs-amyy @ git+https://github.com/amyy54/mkdocs-amyy.git
+./mkdocs-amyy

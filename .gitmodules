@@ -1,0 +1,3 @@
+[submodule "mkdocs-amyy"]
+	path = mkdocs-amyy
+	url = https://github.com/amyy54/mkdocs-amyy
