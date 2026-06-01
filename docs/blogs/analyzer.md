@@ -3,8 +3,6 @@ standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6
 
 # SRC Analyzer Rewrite
 
-**This was originally written February 16, 2023.**
-
 At the start of 2023, I decided to rewrite the entirety of my Speedrun.com
 analysis program. The goal of this program was to allow for easy visualization
 of verification statistics on the many games available on speedrun.com, a

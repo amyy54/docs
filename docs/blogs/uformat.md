@@ -3,8 +3,6 @@ standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6
 
 # Universal Formatter
 
-**This was originally written November 4, 2024.**
-
 I am someone who likes coming up with excuses to learn things. Recently, I took
 over the infrastructure for a project at school, and used it as an avenue to
 learn open source server software, such as Proxmox, which is a VM management
