@@ -1,3 +1,6 @@
+publish_date: 2024-11-04
+standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6otihdtw2h
+
 # Universal Formatter
 
 **This was originally written November 4, 2024.**

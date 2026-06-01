@@ -1,3 +1,6 @@
+publish_date: 2025-12-14
+standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6ooy3qop2e
+
 # Nintendo 64/Wii Development Toolchains
 
 This guide follows the rough installation steps of both the Nintendo 64

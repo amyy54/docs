@@ -1,3 +1,6 @@
+publish_date: 2025-04-28
+standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6opz3nuj2i
+
 # National Cyber League Spring 2025: Team Game
 
 This is a compilation of writeups for challenge I completed during the National

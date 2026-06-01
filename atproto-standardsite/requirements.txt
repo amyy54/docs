@@ -1,0 +1,2 @@
+atproto==0.0.67
+keyring~=25.7.0

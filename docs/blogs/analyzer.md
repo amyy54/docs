@@ -1,3 +1,6 @@
+publish_date: 2023-02-16
+standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6otcltng2a
+
 # SRC Analyzer Rewrite
 
 **This was originally written February 16, 2023.**

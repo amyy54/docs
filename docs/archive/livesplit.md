@@ -1,3 +1,6 @@
+publish_date: 2021-01-01
+standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6oucg7nm2u
+
 # LiveSplit on macOS and Linux with Wine
 
 Archive from Pastebin. LiveSplit, despite being built with .NET, which is cross

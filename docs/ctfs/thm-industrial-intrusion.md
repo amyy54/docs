@@ -1,3 +1,6 @@
+publish_date: 2025-11-09
+standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6osp4dlw2h
+
 # TryHackMe Industrial Intrusion CTF
 
 This was a simple weekend CTF that we did with a couple students at my

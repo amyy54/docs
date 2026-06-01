@@ -1,3 +1,6 @@
+publish_date: 2021-01-01
+standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6oulm2kd2k
+
 # Resize Linux Partition
 
 Archive from Pastebin. On my old Arch Linux laptop, I resized the partition

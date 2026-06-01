@@ -1,3 +1,6 @@
+publish_date: 2026-04-14
+standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6orsp3yo2h
+
 # National Cyber League Spring 2026: Individual Game
 
 ![tar-brute](../static/img/ctfs/tar-brute.png)
