@@ -22,5 +22,4 @@ plugins:
 nav:
   - Site Directory: 'directory.md'
   - CTF Writeups: 'docs/ctfs/index.md'
-#  - Projects: 'development/index.md'
   - Miscellaneous: 'docs/index.md'
