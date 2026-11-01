@@ -1,4 +1,3 @@
 mkdocs~=1.6.0
-mkdocs-redirects~=1.2.3
 mkdocs-macros-plugin~=1.5.0
 ./mkdocs-amyy
