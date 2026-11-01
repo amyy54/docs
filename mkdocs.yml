@@ -3,6 +3,8 @@ site_url: https://amyy.me
 theme:
   name: amyy-theme
   fit_to_height: true
+  css_location: !ENV [CSS_LOCATION, /css]
+  js_location: !ENV [JS_LOCATION, /js]
 
 extra:
   static_location: !ENV [STATIC_LOCATION, /static]
