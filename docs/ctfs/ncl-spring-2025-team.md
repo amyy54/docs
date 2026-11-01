@@ -11,7 +11,7 @@ require CyberSkyline infrastructure. Either way, I hope this is helpful!
 
 ## Password Cracking - Hard
 
-File: [hashes.txt](../static/ctfs/ncl-spring-2025-team/hashes.txt)
+File: [hashes.txt]({{ static_location }}/ctfs/ncl-spring-2025-team/hashes.txt)
 
 This is a great intermediate showcase of Hashcat.
 
@@ -100,7 +100,7 @@ db6c56a98392d81503c52b4b0e43d5a6:ubiquitous-surveillance-CFCE
 ### HTTP Forever
 
 File:
-[httpFOREVER.pcapng](../static/ctfs/ncl-spring-2025-team/httpFOREVER.pcapng)
+[httpFOREVER.pcapng]({{ static_location }}/ctfs/ncl-spring-2025-team/httpFOREVER.pcapng)
 
 This is a great introduction to `thark`, as it helps automate large parts of the
 process. Rather than having to read the file in Wireshark (though it is useful
@@ -120,7 +120,7 @@ figures, the commands entered will be shown per question:
 
 ### SQL Storage Secrets
 
-File: [traffic.pcap](../static/ctfs/ncl-spring-2025-team/traffic.pcap)
+File: [traffic.pcap]({{ static_location }}/ctfs/ncl-spring-2025-team/traffic.pcap)
 
 Packet file is obviously a packet capture of a Postgres database. Makes it
 really easy to read all the information. Due to being a consistent TCP stream,
@@ -131,12 +131,12 @@ view. This answers a couple questions, notably the IP address for the server
 revealed in the first connection request, identifying the user and database
 being connected to.
 
-![sql_client_initial_connection](../static/img/ctfs/sql_client_initial_connection.png)
+![sql_client_initial_connection]({{ static_location }}/img/ctfs/sql_client_initial_connection.png)
 
 Viewing the sent server information also reveals the queried metadata table,
 showing the date the metadata information for the "invoice" was created.
 
-![sql_invoice_date](../static/img/ctfs/sql_invoice_date.png)
+![sql_invoice_date]({{ static_location }}/img/ctfs/sql_invoice_date.png)
 
 The files here are big. The output is contained in the database under the column
 `file_content`, and this is difficult to retrieve generally. I chose to retrieve
@@ -145,9 +145,9 @@ be split and reassembled by filtering for `tcp.reassembled.data`. Getting that
 information and copying the value, then putting it into CyberChef, makes it
 easier to filter out what is properly the filename.
 
-![sql_junk_data_highlighted](../static/img/ctfs/sql_junk_data_highlighted.png)
+![sql_junk_data_highlighted]({{ static_location }}/img/ctfs/sql_junk_data_highlighted.png)
 
-![sql_file_type_identified](../static/img/ctfs/sql_file_type_identified.png)
+![sql_file_type_identified]({{ static_location }}/img/ctfs/sql_file_type_identified.png)
 
 All the files were exported, finding a couple images that don't matter, the
 "invoice" PDF that now answers that it is, in fact, a PDF with a total of
@@ -160,11 +160,11 @@ the metadata ID found the file had been queried. After extracting its
 information, the password revealed itself, thus allowing access into the ZIP
 file, and showing the flag!
 
-![sql_password_txt_file](../static/img/ctfs/sql_password_txt_file.png)
+![sql_password_txt_file]({{ static_location }}/img/ctfs/sql_password_txt_file.png)
 
 ### Ping of Domin8tion
 
-File: [nta_1.pcap](../static/ctfs/ncl-spring-2025-team/nta_1.pcap)
+File: [nta_1.pcap]({{ static_location }}/ctfs/ncl-spring-2025-team/nta_1.pcap)
 
 The description of the challenge is referencing a ping of death, and the
 challenge description itself describes someone attempting to do data
@@ -174,11 +174,11 @@ though notably no response, making it easier to filter for. ICMP packets have a
 matched—has miscellaneous information. As such, I chose to use `tshark` to
 extract all the data information, assuming it's all related.
 
-![pod_icmp_data](../static/img/ctfs/pod_icmp_data.png)
+![pod_icmp_data]({{ static_location }}/img/ctfs/pod_icmp_data.png)
 
 `tshark -r file.pcap -Tfields -e data.data`
 
-![pod_stitched_data](../static/img/ctfs/pod_stitched_data.png)
+![pod_stitched_data]({{ static_location }}/img/ctfs/pod_stitched_data.png)
 
 This information, while can be hex decoded correctly and appears to be
 information, just appears to be complete gibberish. Looking closer at Wireshark,
@@ -189,7 +189,7 @@ order before being used.
 
 `tshark -r file.pcap -Tfields -e frame.time_epoch -e data.data | sort | awk '{print $2}'`
 
-![pod_sorted_data](../static/img/ctfs/pod_sorted_data.png)
+![pod_sorted_data]({{ static_location }}/img/ctfs/pod_sorted_data.png)
 
 From here, the information is copied into CyberChef. Instantly, the PNG header
 became visible, but it suspiciously wasn't at the start of the file where it
@@ -198,13 +198,13 @@ separator to indicate the order of the packet. Looking at the information (it
 wasn't confirmed but solving the challenge proved it), the packet order is the
 correct order, so the headers simply need to be removed.
 
-![pod_data_with_header](../static/img/ctfs/pod_data_with_header.png)
+![pod_data_with_header]({{ static_location }}/img/ctfs/pod_data_with_header.png)
 
 `tshark -r file.pcap -Tfields -e frame.time_epoch -e data.data | sort | awk '{print substr($2,11) }'`
 
-![pod_data_cleaning](../static/img/ctfs/pod_data_cleaning.png)
+![pod_data_cleaning]({{ static_location }}/img/ctfs/pod_data_cleaning.png)
 
 The flag was then revealed converting all of it out of hexadecimal, showing the
 image with the flag!
 
-![pod_final_flag](../static/img/ctfs/pod_final_flag.png)
+![pod_final_flag]({{ static_location }}/img/ctfs/pod_final_flag.png)

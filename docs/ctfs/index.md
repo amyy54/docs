@@ -1,3 +1,4 @@
+center_box: true
 # CTFs
 
 This section contains writeups regarding Capture The Flag (CTF) competitions

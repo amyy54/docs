@@ -1,11 +1,25 @@
-site_name: Amy's Docs
-site_url: https://amyy.me/docs
+site_name: Amy
+site_url: https://amyy.me
 theme:
   name: amyy-theme
   fit_to_height: true
 
+extra:
+  static_location: !ENV [STATIC_LOCATION, /static]
+
+plugins:
+  - macros
+  - redirects:
+      redirect_maps:
+        'development/ahit-archipelago.md': 'misc/development/ahit-archipelago.md'
+        'development/n64-wii.md': 'misc/development/n64-wii.md'
+        'archive/livesplit.md': 'misc/archive/livesplit.md'
+        'archive/resizelinux.md': 'misc/archive/resizelinux.md'
+        'blogs/analyzer.md': 'misc/blogs/analyzer.md'
+        'blogs/uformat.md': 'misc/blogs/uformat.md'
+
 nav:
-  - Blogs: 'blogs/index.md'
-  - CTFs: 'ctfs/index.md'
-  - Development: 'development/index.md'
-  - Archive: 'archive/index.md'
+  - Site Directory: 'directory/index.md'
+  - CTF Writeups: 'ctfs/index.md'
+#  - Projects: 'development/index.md'
+  - Miscellaneous: 'misc/index.md'

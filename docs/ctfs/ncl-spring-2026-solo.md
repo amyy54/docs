@@ -3,13 +3,13 @@ standard_site: at://did:plc:ly7i5volax46sx4dnix3rbhs/site.standard.document/3mn6
 
 # National Cyber League Spring 2026: Individual Game
 
-![tar-brute](../static/img/ctfs/tar-brute.png)
+![tar-brute]({{ static_location }}/img/ctfs/tar-brute.png)
 
 ## Password Cracking
 
 ### Unlocking
 
-File: [usb-clone.img](../static/ctfs/ncl-spring-2026-solo/usb-clone.img)
+File: [usb-clone.img]({{ static_location }}/ctfs/ncl-spring-2026-solo/usb-clone.img)
 
 1. 15 points - What is the file signature in the header of the usb-clone image
    in ASCII?
@@ -27,14 +27,14 @@ day. Firstly, as it's password cracking, it can be reasonably assumed that the
 BitLocker password has to be recovered. Thankfully, `bitlocker2john` has been
 around with the `john` suite for ages, and worked for this image.
 
-![img-bitlocker](../static/img/ctfs/img-bitlocker.png)
+![img-bitlocker]({{ static_location }}/img/ctfs/img-bitlocker.png)
 
 From here, we had to actually crack it. BitLocker is a bulky encryption
 algorithm, so cracking it takes a lot of time, but eventually the password
 `johncena1` found in the `rockyou` wordlist worked, giving the password for the
 image.
 
-![img-hashcat-crack](../static/img/ctfs/img-hashcat-crack.png)
+![img-hashcat-crack]({{ static_location }}/img/ctfs/img-hashcat-crack.png)
 
 Now, to actually read it. This took a lot of work, and I even fired up a Windows
 VM to try and see if it would respond to the file better. Most systems expect
@@ -44,13 +44,13 @@ one that ended up working. It was only available on Linux and not macOS, so a
 Kali VM was used and the file was uploaded, mounted, then the flag could be
 shown.
 
-![img-mount](../static/img/ctfs/img-mount.png)
+![img-mount]({{ static_location }}/img/ctfs/img-mount.png)
 
 ## Networking
 
 ### Parsing DNS
 
-File: [dnsqr.dump](../static/ctfs/ncl-spring-2026-solo/dnsqr.dump)
+File: [dnsqr.dump]({{ static_location }}/ctfs/ncl-spring-2026-solo/dnsqr.dump)
 
 1. 10 points - What DNS object is being queried (answer in lowercase)?
 
@@ -88,8 +88,8 @@ questions.
 
 ### Compressed Analysis
 
-Files: [capture.pcap](../static/ctfs/ncl-spring-2026-solo/capture.pcap),
-[tls_keys.log](../static/ctfs/ncl-spring-2026-solo/tls_keys.log)
+Files: [capture.pcap]({{ static_location }}/ctfs/ncl-spring-2026-solo/capture.pcap),
+[tls_keys.log]({{ static_location }}/ctfs/ncl-spring-2026-solo/tls_keys.log)
 
 1. 5 points - What is the IP address of the host receiving POST messages from
    the attackers?
@@ -133,8 +133,8 @@ brute forced character. If the character is correct, due to issue with `gzip`,
 there will be a one byte difference if their last character was correct. Thus,
 allowing the attacker to slowly brute force the key.
 
-![nta-med-343](../static/img/ctfs/nta-med-343.png)
-![nta-med-342](../static/img/ctfs/nta-med-342.png)
+![nta-med-343]({{ static_location }}/img/ctfs/nta-med-343.png)
+![nta-med-342]({{ static_location }}/img/ctfs/nta-med-342.png)
 
 From this, the attacker was able to correctly build the whole flag. Most of the
 questions surrounding this challenge focus on figuring out what that attack is,
@@ -144,7 +144,7 @@ who's sending messages to who, etc.
 
 ### JS Vault
 
-File: [vault-de.js](../static/ctfs/ncl-spring-2026-solo/vault-de.js)
+File: [vault-de.js]({{ static_location }}/ctfs/ncl-spring-2026-solo/vault-de.js)
 
 1. 5 points - Are there any tools that can automatically reverse JavaScript
    obfuscations (Y/N)?
@@ -171,7 +171,7 @@ just involved tracing functions. Any web browser lets you execute loaded
 functions independently, so tracing the remote file and identifying where it's
 used is helpful. The function was `cs_X()`.
 
-![web-flag](../static/img/ctfs/web-flag.png)
+![web-flag]({{ static_location }}/img/ctfs/web-flag.png)
 
 Other flags were fairly easy to identify. There's a `parseInt()` function that
 parses the input in octal, thus limiting the numbers to octal numbers, `SKY-` is
@@ -182,7 +182,7 @@ challenge is trivial.
 
 ### Breads
 
-File: [bread](../static/ctfs/ncl-spring-2026-solo/bread)
+File: [bread]({{ static_location }}/ctfs/ncl-spring-2026-solo/bread)
 
 1. 10 points - What language is this program written in?
 
@@ -204,11 +204,11 @@ one, all that was needed was Ghidra. Pretty much all of these questions can be
 solved by opening Ghidra and poking around, especially since Ghidra C++ analysis
 is pretty solid and the code didn't require much cleaning up.
 
-![bread-med-ghidra](../static/img/ctfs/bread-med-ghidra.png)
+![bread-med-ghidra]({{ static_location }}/img/ctfs/bread-med-ghidra.png)
 
 ### Liber8eze
 
-File: [liber8eze](../static/ctfs/ncl-spring-2026-solo/liber8eze)
+File: [liber8eze]({{ static_location }}/ctfs/ncl-spring-2026-solo/liber8eze)
 
 1. 10 points - What language is this binary written in?
 
@@ -235,7 +235,7 @@ into other system applications through its use. The environment variables
 question also helped speed up the analysis, and very quickly my eye was on the
 DATA strings that existed throughout the program.
 
-![liber8-ghidra-vars](../static/img/ctfs/liber8-ghidra-vars.png)
+![liber8-ghidra-vars]({{ static_location }}/img/ctfs/liber8-ghidra-vars.png)
 
 In here, and throughout their use in the program, the Rust code read from
 environment variables that could override existing functions within the program.
@@ -248,12 +248,12 @@ gotten around. Importantly, the program made the decision to use `which` to
 determine the path to `sh`. Because it chose to use this, we could manipulate
 the path to point to a custom `sh`.
 
-![liber8-ghidra-which](../static/img/ctfs/liber8-ghidra-which.png)
+![liber8-ghidra-which]({{ static_location }}/img/ctfs/liber8-ghidra-which.png)
 
-![liber8-path-sh](../static/img/ctfs/liber8-path-sh.png)
+![liber8-path-sh]({{ static_location }}/img/ctfs/liber8-path-sh.png)
 
 From here, while also setting `LIBER8_CHANGE_CMD` to anything other than its
 default, we can force the evaluation of our own "sh" that gives us a root shell,
 allowing us to cat the flag.
 
-![liber8-solution](../static/img/ctfs/liber8-solution.png)
+![liber8-solution]({{ static_location }}/img/ctfs/liber8-solution.png)
